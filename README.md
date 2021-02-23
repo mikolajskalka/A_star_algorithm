@@ -11,11 +11,11 @@ Program korzysta z modułu pygame, który jest niezbędny do jego uruchomienia.
 
 Serce programu to sam algorytm A*, który służy do znajdowania najkrótszej scieżki pomiędzy dwoma punktami.
 Algorytm wybiera scieżkę spośród nieodwiedzonych jeszcze wierzchołków tak aby minimalizować funkcję f(x), która jest 
-zadana wzorem:
-f(x) = g(x) + h(x)
-gdzie x jest wierzchołkiem sąsiadującym z aktualnie odwiedzanym wierzchołkiem.
-g(x) to funkcja, która oblicza odległość/koszt drogi od punktu startowego do wierzchołka x
-h(x) to funkcja heurystyczna, która oblicza odległość/koszt drogi od wierzchołka x do wierzchołka docelowego.
+zadana wzorem: \
+f(x) = g(x) + h(x) \
+gdzie x jest wierzchołkiem sąsiadującym z aktualnie odwiedzanym wierzchołkiem. \
+g(x) to funkcja, która oblicza odległość/koszt drogi od punktu startowego do wierzchołka x \
+h(x) to funkcja heurystyczna, która oblicza odległość/koszt drogi od wierzchołka x do wierzchołka docelowego. \
 
 W tym przypadku funkcja heurystyczna została zaimplementowana jako "Manhatan distance". To znaczy odległość pomiędzy dwoma 
 punktami obliczona jest jako suma bezwzględnych różnic odpowiadających wzspółrzędnych:
