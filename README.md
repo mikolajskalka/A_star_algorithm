@@ -19,19 +19,19 @@ h(x) to funkcja heurystyczna, która oblicza odległość/koszt drogi od wierzch
 
 W tym przypadku funkcja heurystyczna została zaimplementowana jako "Manhatan distance". To znaczy odległość pomiędzy dwoma 
 punktami obliczona jest jako suma bezwzględnych różnic odpowiadających wzspółrzędnych:
-'
+```
 def h(p1, p2): 
     x1, y1 = p1
     x2, y2 = p2
     return abs(x1 - x2) + abs(y1 - y2)
-' 
+```
 
 Funkcja g(x) w tym przypadku dla każdego kolejnego odwiedzonego wierzchołka będzie wynosić tyle co dla poprzedniego 
 wierzchołka + 1.
 
 
 
-`
+```
 def a_star(draw, start, grid, goal):
     """ A* path finding algorithm """
     count = 0
@@ -76,4 +76,4 @@ def a_star(draw, start, grid, goal):
             current.make_closed()
     
     return False
-`
+```
