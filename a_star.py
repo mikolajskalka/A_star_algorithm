@@ -113,6 +113,7 @@ def a_star(draw, start, grid, goal):
     openSet.put((0, count, start))
     cameFrom = {}
     gScore = {node : float("inf") for row in grid for node in row}
+    
     gScore[start] = 0  
     fScore = {node : float("inf") for row in grid for node in row}
     fScore[start] = h(start.get_pos(), goal.get_pos())
